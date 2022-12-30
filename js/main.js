@@ -20,12 +20,11 @@ rewards.forEach((reward, i) => {
 })
 
 let tabHeader = document.querySelector(".feature__tabs_header");
-let tabIndicator = document.querySelector(".feature__tabs_indicator");
+let tabIndicator = document.querySelector(".feature__tabs_indicator div");
 let tabBody = document.querySelector(".feature__tabs_body");
 
 
 let tabsPane = tabHeader.querySelectorAll(".feature__tab_switch");
-console.log(tabsPane);
 
 for (let i = 0; i < tabsPane.length; i++) {
     tabsPane[i].addEventListener("click", function () {
