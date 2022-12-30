@@ -308,7 +308,6 @@ body {
     font-family: 'Design';
     font-weight: 400;
     font-size: 50px;
-
 }
 
 .sub__dur {
@@ -320,4 +319,66 @@ body {
 .y_sub__price::before {
     content: '$4.09';
 }
+
+.sub__neon {
+    position: absolute;
+    filter: blur(115px);
+    width: 200px;
+    height: 200px;
+}
+
+.red_sub__neon {
+    top: -50px;
+    right: -40px;
+    background: rgba(253, 119, 159, 0.1);
+}
+
+.blue_sub__neon {
+    bottom: -50px;
+    left: -40px;
+    background: rgba(99, 133, 253, 0.1);
+}
+
 /* ----- End Second Section ----- */
+
+
+/* ----- Third Section ----- */
+
+.third-section {
+    margin-bottom: 100px;
+}
+.swiper {
+    width: 100%;
+    height: 250px;
+}
+
+.swiper-slide {
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.reward {
+    box-sizing: content-box;
+    
+}
+
+.customer__reward {
+    z-index: 5;
+}
+/* ----- End Third Section */

@@ -4,9 +4,20 @@
         gap: 80px;
         align-items: center;
     }
+    .sub__discount p {
+        font-size: 45px;
+    }
 }
 
 @media (max-width: 992px) {
+    .first-section {
+        margin-bottom: 80px;
+    }
+
+    .second-section {
+        margin-bottom: 80px;
+    }
+
     .fs__container {
         flex-direction: column;
     }
@@ -25,6 +36,7 @@
     br {
         display: none;
     }
+
     .sub__discount p {
         font-size: 35px;
     }
@@ -79,6 +91,7 @@
     .sub__feature {
         font-size: 14px;
     }
+
     .sub__btn {
         margin-top: 30px;
         margin-bottom: 10px;
@@ -108,20 +121,28 @@
 }
 
 @media (max-width:400px) {
+    .sub__card {
+        padding: 20px 30px;
+    }
+
     .sub__price {
         font-size: 30px;
     }
+
     .sub__time {
         font-size: 25px;
     }
+
     .sub__price::before {
         font-size: 16px;
         left: -50px;
     }
+
     .sub__price::after {
         width: 40px;
         left: -50px;
     }
+
     .sub__pum {
         font-size: 14px;
         margin-bottom: 20px;
