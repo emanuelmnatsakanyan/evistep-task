@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,600&display=swap');
 
 @font-face {
     font-family: 'Design';
@@ -23,14 +23,14 @@ body {
 
 .container {
     max-width: 1320px;
-    padding: 0 15px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .title {
     font-weight: 600;
     font-size: 39px;
-    line-height: 52px;
+    line-height: 1.33;
     text-align: center;
     padding: 0 15px;
 }
@@ -58,7 +58,7 @@ body {
     padding: 15px 50px;
     font-size: 18px;
     cursor: pointer;
-    line-height: 23px;
+    line-height: 1.27;
     transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 
@@ -97,7 +97,7 @@ body {
 .fs__title {
     font-weight: bold;
     font-size: 49px;
-    line-height: 69px;
+    line-height: 1.41;
 }
 
 .fs__title span {
@@ -278,10 +278,9 @@ body {
     font-size: 20px;
     line-height: 25px;
     padding: 15px 40px;
-    background-color: transparent;
     outline: none;
     border: 1px solid #8276FF;
-    background: #8276FF;
+    background-color: #8276FF;
     border-radius: 31.0938px;
     cursor: pointer;
     margin-top: 50px;
@@ -347,6 +346,7 @@ body {
 .third-section {
     margin-bottom: 100px;
 }
+
 .swiper {
     width: 100%;
     height: fit-content;
@@ -377,12 +377,164 @@ body {
     width: 100%;
     object-fit: cover;
 }
+
 .reward {
     box-sizing: content-box;
-    
+
 }
 
 .customer__reward {
     z-index: 5;
 }
+
 /* ----- End Third Section */
+
+
+/* ----- Fourth Section ----- */
+
+.fourth-section {
+    margin-bottom: 180px;
+}
+
+.feature__container {
+    background: linear-gradient(147.19deg, #362A87 -2.99%, #2C2747 82.25%, #4323F1 157.46%);
+    border-radius: 26px;
+    padding: 73px 46px 130px 54px;
+    margin: 0 15px;
+}
+
+.fts__title {
+    margin-bottom: 80px;
+}
+
+.fts__title span {
+    color: #FFC759;
+}
+
+
+
+
+
+
+
+
+
+
+.feature__tabs {
+    overflow: hidden;
+}
+
+.feature__tabs_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 37px;
+}
+
+.feature__tab_switch {
+    width: calc(100% / 6);
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.feature__tab_switch.active .feature__tab_title {
+    font-weight: 700;
+}
+
+.feature__tabs_indicator {
+    position: relative;
+    width: calc(100% / 6);
+    height: 5px;
+    background: #fff;
+    left: 0px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: all 500ms ease-in-out;
+}
+
+.feature__tabs_body {
+    position: relative;
+    height: fit-content;
+}
+
+.feature__tabs_body>div {
+    display: none;
+    transform: scale(0.9);
+    transition: display 500ms ease-in-out 0ms,
+        transform 500ms ease-in-out 0ms;
+}
+
+.feature__tabs_body>div.active {
+    width: 100%;
+    height: fit-content;
+    top: 0px;
+    transform: scale(1);
+}
+
+.feature__tab_title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 13px;
+}
+
+.feature__tab.active {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature__tab_info {
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.feature__tab_heading {
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 52px;
+    margin-bottom: 30px;
+}
+
+.feature__tab_tick {
+    display: flex;
+    gap: 13px;
+}
+
+.feature__tab_info .feature__tab_tick:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.feature__tab_tick p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.feature__tab_btn {
+    background-color: #8276FF;
+    border-radius: 31.0938px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 15px 40px;
+    margin-top: 40px;
+    border: 1px solid #8276FF;
+    outline: none;
+    cursor: pointer;
+}
+
+.feature__tab_imageblock {
+    flex-basis: 100%;
+    flex: 1;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature__tab_image {
+    max-width: 100%;
+}
+
+/* ----- End Fourth Section ----- */

@@ -19,6 +19,9 @@
         margin-bottom: 80px;
     }
 
+    .fourth-section {
+        margin-bottom: 80px;
+    }
     .fs__container {
         flex-direction: column;
     }
@@ -31,11 +34,39 @@
     .fs__discount {
         margin: 0 auto;
     }
+
+    .feature__container {
+        padding: 50px 50px 70px;
+    }
+
+    .feature__tab.active {
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 50px;
+    }
+
+    .feature__tab_title {
+        font-size: 16px;
+    }
+
+    .feature__tab_heading {
+        font-size: 30px;
+    }
+
+    .feature__tab_tick p {
+        font-size: 18px;
+    }
+
+    .feature__tab_btn {
+        margin-top: 25px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 768px) {
-
-
     br {
         display: none;
     }
@@ -47,11 +78,36 @@
     .red_sub__neon {
         right: 0px;
     }
+
+    .fts__title {
+        margin-bottom: 50px;
+    }
+
+    .feature__tab_title {
+        display: none;
+    }
+
+    .feature__tabs_header {
+        margin-bottom: 20px;
+    }
+
+    .feature__tab_info .feature__tab_tick:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
 }
 
 @media (max-width: 600px) {
     .sub__discount {
         right: 0;
+    }
+
+    .third-section {
+        margin-bottom: 60px;
+    }
+
+    .title {
+        font-size: 28px;
     }
 }
 
@@ -103,11 +159,10 @@
         font-size: 14px;
     }
 
-    .sub__btn {
-        margin-top: 30px;
-        margin-bottom: 10px;
-        font-size: 16px;
-        padding: 10px 30px;
+
+    .feature__tab_heading {
+        font-size: 20px;
+        line-height: 1.5;
     }
 }
 
@@ -119,7 +174,7 @@
 
     .fs__title, .fs__title span {
         font-size: 32px;
-        line-height: 1.5;
+        line-height: 1.2;
     }
 
     .fs__companies {
@@ -127,11 +182,56 @@
     }
 
     .fs__btn {
-        padding: 8px 20px;
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .sub__btn {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+
+    .feature__container {
+        padding: 30px;
+    }
+
+    .feature__tab_heading {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .feature__tab_tick p {
+        font-size: 12px;
+    }
+
+    .feature__tab_info .feature__tab_tick:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
+    .feature__tab.active {
+        margin-top: 20px;
+        gap: 20px;
+
+    }
+
+    .feature__tab_btn {
+        font-size: 16px;
+        padding: 10px 30px;
+        margin-top: 16px;
+    }
+    .title {
+        font-size: 22px;
     }
 }
 
 @media (max-width:400px) {
+    .fs__btn {
+        font-size: 12px;
+        padding: 8px 24px;
+    }
+
     .sub__card {
         padding: 20px 30px;
     }
@@ -159,6 +259,11 @@
         margin-bottom: 20px;
     }
 
+    .sub__btn {
+        font-size: 12px;
+        padding: 8px 24px;
+    }
+
     .sub__discount {
         width: 70px;
         height: 70px;
@@ -167,5 +272,14 @@
 
     .sub__discount p {
         font-size: 16px;
+    }
+
+    .feature__tab_switch {
+        transform: scale(0.7)
+    }
+
+    .feature__tab_btn {
+        font-size: 12px;
+        padding: 8px 24px;
     }
 }
